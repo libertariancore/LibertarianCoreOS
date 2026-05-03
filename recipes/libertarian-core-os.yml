@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 name: libertarian-core-os
-description: Sovereign Digital Fortress - Gaming, AI, HTPC and Anti-Orwellian Tools.
+description: Sovereign Digital Fortress - Gaming, AI, HTPC and Anti-Orwellian Tools
 
 base-image: ghcr.io/ublue-os/bazzite
 image-version: 40
@@ -21,7 +21,7 @@ modules:
       - bleachbit
       - firewalld
       - openssl
-      # --- Virtualisation (Pour Whonix/Windows VM) ---
+      # --- Virtualisation ---
       - virt-manager
       - libvirt
       - qemu-kvm
@@ -34,32 +34,29 @@ modules:
 
   - type: flatpak
     install:
-      # --- Privacy & Anti-Surveillance ---
+      # --- Privacy ---
       - com.brave.Browser
-      - io.gitlab.librewolf-community
+      - io.gitlab.librewolf-community.librewolf
       - org.torproject.torbrowser-launcher
       - io.simplex.simplex
       - com.github.tchx84.Flatseal
       - com.belmoussaoui.Authenticator
-      # --- Workstation & Productivité ---
+      # --- Workstation ---
       - org.onlyoffice.desktopeditors
-      - net.cozic.joplin_desktop
-      - org.localsend.localsend_app
       - net.ankiweb.Anki
       - io.github.antimatter15.ConverterNow
       - org.gnome.Thunderbird
-      - com.visualstudio.code.oss
-      # --- Gaming Hub ---
+      - com.visualstudio.code
+      # --- Gaming ---
       - com.usebottles.bottles
       - com.heroicgameslauncher.hgl
       - com.github.Matoking.protontricks
       - net.lutris.Lutris
-      # --- Multimédia & Souveraineté HTPC ---
-      - tv.kodi.Kodi                  # Local Media Center
+      # --- Multimédia & HTPC ---
+      - tv.kodi.Kodi
       - org.videolan.VLC
       - io.bassi.Amberol
       - org.nickvision.Parabolic
-      - io.gitlab.news_flash.NewsFlash
 
   - type: script
     scripts:
