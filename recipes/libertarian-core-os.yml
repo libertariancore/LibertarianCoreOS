@@ -15,7 +15,6 @@ modules:
     install:
       # --- Core Sovereign & Security ---
       - fish
-      - mullvad-vpn
       - keepassxc
       - syncthing
       - bleachbit
@@ -29,11 +28,7 @@ modules:
       - lshw
       - htop
       - mesa-va-drivers-freeworld
-      - waydroid
       - podman-compose
-      - akmod-nvidia
-      - xorg-x11-drv-nvidia
-      - xorg-x11-drv-nvidia-cuda
 
   - type: script
     scripts:
