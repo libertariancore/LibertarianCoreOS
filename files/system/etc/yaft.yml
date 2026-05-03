@@ -1,0 +1,32 @@
+title: LibertarianCoreOS
+properties:
+  mode: "run-on-change"
+screens:
+  apps:
+    source: yafti.screen.package
+    values:
+      title: Applications
+      packages:
+        - Brave: com.brave.Browser
+        - LibreWolf: io.gitlab.librewolf-community.librewolf
+        - Tor Browser: org.torproject.torbrowser-launcher
+        - Simplex: io.simplex.simplex
+        - Flatseal: com.github.tchx84.Flatseal
+        - Authenticator: com.belmoussaoui.Authenticator
+        - OnlyOffice: org.onlyoffice.desktopeditors
+        - Anki: net.ankiweb.Anki
+        - Thunderbird: org.gnome.Thunderbird
+        - VSCode: com.visualstudio.code
+        - Bottles: com.usebottles.bottles
+        - Heroic Games: com.heroicgameslauncher.hgl
+        - Protontricks: com.github.Matoking.protontricks
+        - Lutris: net.lutris.Lutris
+        - Kodi: tv.kodi.Kodi
+        - VLC: org.videolan.VLC
+        - Amberol: io.bassi.Amberol
+        - ConverterNOW: io.github.ferraridamiano.ConverterNOW
+        - NewsFlash: io.gitlab.news_flash.NewsFlash
+        - Joplin: net.cozic.joplin_desktop
+        - LocalSend: org.localsend.localsend_app
+        - Ultimate Media DL: com.ktechpit.ultimate-media-downloader
+        - Mullvad VPN: com.mullvad.MullvadVPN
