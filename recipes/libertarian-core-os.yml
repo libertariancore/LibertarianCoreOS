@@ -56,7 +56,7 @@ modules:
       - tv.kodi.Kodi
       - org.videolan.VLC
       - io.bassi.Amberol
-      - org.nickvision.Parabolic
+      - org.nickvision.tubeconverter
 
   - type: script
     scripts:
