@@ -55,7 +55,7 @@ modules:
       - com.github.Matoking.protontricks
       - net.lutris.Lutris
       # --- Multimédia & Souveraineté HTPC ---
-      - tv.kodi.Kodi                  # Le roi du HTPC / Media Center local
+      - tv.kodi.Kodi                  # Local Media Center
       - org.videolan.VLC
       - io.bassi.Amberol
       - org.nickvision.tubeconverter
