@@ -2,7 +2,7 @@
 name: libertarian-core-os
 description: Sovereign Digital Fortress - Gaming, AI, HTPC and Anti-Orwellian Tools
 
-base-image: ghcr.io/ublue-os/bazzite
+base-image: ghcr.io/ublue-os/bazzite-kde
 image-version: latest
 
 modules:
@@ -31,6 +31,9 @@ modules:
       - mesa-va-drivers-freeworld
       - waydroid
       - podman-compose
+      - akmod-nvidia
+      - xorg-x11-drv-nvidia
+      - xorg-x11-drv-nvidia-cuda
 
   - type: script
     scripts:
