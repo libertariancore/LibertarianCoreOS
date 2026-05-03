@@ -27,7 +27,29 @@ systemctl enable ollama
 # 6. Sécurité Hardware (Blacklist Bluetooth)
 echo "blacklist btusb" > /etc/modprobe.d/disable-bluetooth.conf
 
-flatpak install -y --noninteractive flathub io.gitlab.news_flash.NewsFlash
-flatpak install -y --noninteractive flathub net.cozic.joplin_desktop
-flatpak install -y --noninteractive flathub org.localsend.localsend_app
-flatpak install -y --noninteractive flathub com.ktechpit.ultimate-media-downloader
+flatpak remote-add --if-not-exists flathub \
+  https://flathub.org/repo/flathub.flatpakrepo
+
+flatpak install -y --noninteractive flathub \
+  com.brave.Browser \
+  io.gitlab.librewolf-community.librewolf \
+  org.torproject.torbrowser-launcher \
+  io.simplex.simplex \
+  com.github.tchx84.Flatseal \
+  com.belmoussaoui.Authenticator \
+  org.onlyoffice.desktopeditors \
+  net.ankiweb.Anki \
+  org.gnome.Thunderbird \
+  com.visualstudio.code \
+  com.usebottles.bottles \
+  com.heroicgameslauncher.hgl \
+  com.github.Matoking.protontricks \
+  net.lutris.Lutris \
+  tv.kodi.Kodi \
+  org.videolan.VLC \
+  io.bassi.Amberol \
+  io.github.ferraridamiano.ConverterNOW \
+  io.gitlab.news_flash.NewsFlash \
+  net.cozic.joplin_desktop \
+  org.localsend.localsend_app \
+  com.ktechpit.ultimate-media-downloader
