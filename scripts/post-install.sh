@@ -30,3 +30,4 @@ echo "blacklist btusb" > /etc/modprobe.d/disable-bluetooth.conf
 flatpak install -y --noninteractive flathub io.gitlab.news_flash.NewsFlash
 flatpak install -y --noninteractive flathub net.cozic.joplin_desktop
 flatpak install -y --noninteractive flathub org.localsend.localsend_app
+flatpak install -y --noninteractive flathub com.ktechpit.ultimate-media-downloader
