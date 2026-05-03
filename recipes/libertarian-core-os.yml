@@ -56,7 +56,6 @@ modules:
       - tv.kodi.Kodi
       - org.videolan.VLC
       - io.bassi.Amberol
-      - com.ktechpit.ultimate-media-downloader
 
   - type: script
     scripts:
