@@ -27,7 +27,6 @@ modules:
       # --- System & Drivers ---
       - lshw
       - htop
-      - mesa-va-drivers-freeworld
       - podman-compose
 
   - type: script
