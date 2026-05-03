@@ -2,8 +2,8 @@
 name: libertarian-core-os
 description: Sovereign Digital Fortress - Gaming, AI, HTPC and Anti-Orwellian Tools
 
-base-image: ghcr.io/ublue-os/bazzite-kde
-image-version: latest
+base-image: ghcr.io/ublue-os/bazzite
+image-version: stable
 
 modules:
   - type: files
