@@ -44,7 +44,7 @@ modules:
       # --- Workstation ---
       - org.onlyoffice.desktopeditors
       - net.ankiweb.Anki
-      - io.github.antimatter15.ConverterNow
+      - io.github.ferraridamiano.ConverterNOW
       - org.gnome.Thunderbird
       - com.visualstudio.code
       # --- Gaming ---
@@ -56,7 +56,7 @@ modules:
       - tv.kodi.Kodi
       - org.videolan.VLC
       - io.bassi.Amberol
-      - org.nickvision.tubeconverter
+      - com.ktechpit.ultimate-media-downloader
 
   - type: script
     scripts:
