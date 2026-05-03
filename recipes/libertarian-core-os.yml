@@ -58,7 +58,7 @@ modules:
       - tv.kodi.Kodi                  # Local Media Center
       - org.videolan.VLC
       - io.bassi.Amberol
-      - org.nickvision.tubeconverter
+      - org.nickvision.Parabolic
       - io.gitlab.news_flash.NewsFlash
 
   - type: script
