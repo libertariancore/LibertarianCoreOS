@@ -52,4 +52,5 @@ flatpak install -y --noninteractive flathub \
   io.gitlab.news_flash.NewsFlash \
   net.cozic.joplin_desktop \
   org.localsend.localsend_app \
-  com.ktechpit.ultimate-media-downloader
+  com.ktechpit.ultimate-media-downloader \
+  com.mullvad.MullvadVPN
