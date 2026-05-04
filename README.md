@@ -1,43 +1,47 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
-
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
-
-## Installation
-
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
-
-To rebase an existing atomic Fedora installation to the latest build:
-
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
-
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
-
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/how-to/generate-iso/#_top). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
-
-## Verification
-
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
-
+# 🦊 LibertarianCoreOS 🦡
+> **"Your hardware, your data, your sovereignty."**
+> 
+LibertarianCoreOS is an immutable, polyvalent operating system (Workstation & Gaming) built on top of **Bazzite**. It is engineered for digital sovereignty and designed to resist increasingly orwellian digital policies.
+This isn't just another Linux distro; it's a statement.
+## 🛠 Features
+ * **Immutable Foundation**: Based on Fedora Atomic (via Bazzite/BlueBuild) for rock-solid stability.
+ * **Privacy-First**: Hardened out-of-the-box to minimize tracking and maximize user control.
+ * **Gaming Ready**: All the power of Bazzite (Steam, Lutris, GameMode) without the bloat.
+ * **Hermès Agent (In Development)**: A local, sovereign AI assistant running on Qwen/Hermes, tailored to your hardware. No cloud, no surveillance.
+ * **Libertarian Philosophy**: Designed for those who treat their PC as a private sanctuary.
+## 🚀 Installation
+To rebase your existing Fedora Atomic installation to **LibertarianCoreOS**:
+ 1. **Rebase to the unsigned image** (to get signing keys):
+   ```bash
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/libertariancore/libertariancore:latest
+   
+   ```
+ 2. **Reboot**:
+   ```bash
+   systemctl reboot
+   
+   ```
+ 3. **Rebase to the signed image**:
+   ```bash
+   rpm-ostree rebase ostree-image-signed:ghcr.io/libertariancore/libertariancore:latest
+   
+   ```
+ 4. **Final Reboot**:
+   ```bash
+   systemctl reboot
+   
+   ```
+## 🤖 Hermès Assistant
+LibertarianCoreOS features **Hermès**, your local AI collaborator.
+Depending on your system specs, the installer will automatically suggest the optimal local model:
+ * **8GB RAM**: Qwen 1.5B / 4B
+ * **16GB+ RAM**: Qwen 9B / Hermes 2
+ * **32GB+ RAM**: Qwen 32B+
+## 🛡 Verification
+Our images are signed with **Sigstore's cosign**. Verify the signature by running:
 ```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+cosign verify --key cosign.pub ghcr.io/libertariancore/libertariancore
+
 ```
+### 💡 Why the Fox & the Badger?
+The **Fox** represents tactical intelligence and the ability to navigate complex systems. The **Honey Badger (Ratel)** represents the raw, offensive defense of one's territory. Together, they form the core of our digital resistance.
